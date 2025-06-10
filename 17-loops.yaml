@@ -1,13 +1,11 @@
-- name: print the names
+- name: Loops
   hosts: local
   connection: local
   tasks:
-  - name: print names using loops
+  - name: print the names with loops
     ansible.builtin.debug:
       msg: "{{ item }}"
     loop:
+    - Iphone
     - iMac
     - Macbook
-    - Iphone
-
-
