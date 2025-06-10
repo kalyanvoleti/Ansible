@@ -2,17 +2,16 @@
   hosts: local
   become: yes
   tasks:
-  - name: installing packages in loops
+  - name: installing packages with loops
     ansible.builtin.package:
-      name: " {{ item }} "
+      name: "{{ item }}"
       state: present
     loop:
     - maven
-    - jenkins
-    - docker
-    - tree
     - git
-    - maven
+    - tree
     - gcc
+
+
 
 
