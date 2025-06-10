@@ -8,6 +8,6 @@
       state: "{{ item.state }}"
     loop:
     - { name: 'maven' , state: 'absent' }
-    - { name: 'docker' , state: 'present' }
-    - { name: 'tree' , state: 'absent' }
+    - { name: 'docker' , state: 'absent' }
+    - { name: 'tree' , state: 'present' }
     - { name: 'gcc' , state: 'present' }
