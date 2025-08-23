@@ -1,0 +1,5 @@
+- name: Ping web hosts
+  hosts: web
+  tasks: # task=module=collection
+  - name: Verify connectivity of web hosts
+    ansible.builtin.ping:
